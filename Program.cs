@@ -8,8 +8,7 @@ namespace Test
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {            
             int countCapacity = int.Parse(Console.ReadLine());
             Dictionary<string, int> messagesByUser = new Dictionary<string, int>();
             Dictionary<string, int> messSentByUser = new Dictionary<string, int>();
@@ -38,7 +37,7 @@ namespace Test
                     {
                         continue;
                     }
-
+                    
                     messagesByUser.Add(userName, messageSent);
                     messagesByUser[userName] += messageReceived;
                     messSentByUser.Add(userName, messageSent);
@@ -54,8 +53,7 @@ namespace Test
                         messagesByUser[userReceived] += 1;
                         messSentByUser[userSent] += 1;
 
-                        if (countCapacity <= messagesByUser[userSent])
-                            
+                        if (countCapacity <= messagesByUser[userSent])                            
                            // countCapacity == messagesByUser[userReceived])
                         {
                             Console.WriteLine($"{userSent} reached the capacity!");
