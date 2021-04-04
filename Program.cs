@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Test
-{
-    
+{    
     class Program
     {
         static void Main(string[] args)
